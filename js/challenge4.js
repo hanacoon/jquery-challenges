@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  $("preview").submit(function( event ) {
+  $("form").submit(function( event ) {
+    console.log("hi")
     if ($("#fullname").val()=="") {
       event.preventDefault();
       $("#nameerrormsg").css("display", "block");
